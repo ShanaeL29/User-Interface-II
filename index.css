@@ -4,6 +4,8 @@ html {
     font-size: 1rem;
     font-family: cursive;
     background-color: lightgrey;
+    border: 2em double black;
+    width: 100vw;
 }
 
 h1 {
@@ -25,7 +27,7 @@ nav a {
     border: 0.16em solid black;
     color: palevioletred;
     font-size: 1.5em;
-    font-family:cursive;
+    font-family: cursive;
     transition: .5s;
 }
 
@@ -48,11 +50,82 @@ h2 {
     width: 100vw;
 }
 
-p {
+.info {
     text-align: justify;
     padding: 0 5em 2em 5em;
     line-height: 1.5em;
     font-size: 1.5em;
 }
 
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+}
 
+.projectInfo p {
+    text-align: center;
+    padding-left: 65em;
+    padding-right: 2em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.project:hover .text {
+    opacity: 1;  
+  }
+
+.text {
+  font-family:cursive;
+  font-size:1rem;
+  opacity:0;
+  transition:.5s;
+}
+
+.text a {
+  text-decoration:none;
+  color: palevioletred;;
+  text-shadow: .05em .05em  rgb(92, 72, 72);
+  font-size: 4em;
+}
+
+
+.project {
+    display: flex;
+    background: url(https://picsum.photos/640?random=1);
+    box-sizing: border-box;
+    border-radius: 2.5em;
+    align-items: center;
+    justify-content: center;
+    height: 40em;
+    width: 20em;
+    margin: 2em;
+}
+
+.projectGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /* align-content: space-evenly; */
+}
+
+footer {
+    background-color:silver;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+button {
+    padding: 0.625em 1.25em;
+    border: 0.16em solid black;
+}
+
+button a {
+    text-decoration: none;
+    padding: 0.625em 1.25em;
+    color: palevioletred;
+    font-size: 1.5em;
+    font-family: cursive;
+    transition: .5s;
+}
