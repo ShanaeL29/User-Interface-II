@@ -1,1 +1,168 @@
-/* Add CSS styling here */
+/*Home Page Styles*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: cursive;
+    border: 3.2rem double black;
+    color: black;
+    line-height: 2.4rem;
+    font-size: 2.4rem;
+}
+
+.topPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centers divs*/
+    text-align: center; /*centers text in the div*/
+}
+
+h1 {
+    justify-content: center;
+    font-family: 'Great Vibes',monotype corsiva, cursive;
+    font-size: 9.6rem;
+    padding: 1rem;
+    margin: 7rem;
+}
+
+.topImage {
+    width: 100%;
+    height: 50rem;
+}
+
+.projectGalleryRow {
+    display: flex;
+    /*flex-direction is row by default*/
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.projectText {
+    width: 30rem;
+    text-align: center;
+    padding: 4rem;
+    margin-right: 2rem;
+}
+
+button {
+    background-color: white;
+    color: palevioletred;
+    padding: 1rem 2rem;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgb(92, 72, 72);
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2.4rem;
+    font-family: cursive;
+}
+
+h2 {
+    font-family: 'Great Vibes',monotype corsiva, cursive;
+    justify-content: center;
+    font-size: 9.6rem;
+    padding: 1rem;
+    margin: 7rem;
+}
+
+.info {
+    text-align: justify;
+    padding: 0 8rem 3.2rem 8rem;
+}
+
+footer {
+    background-color: silver;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.social {
+    padding-top: 2rem;
+    margin: auto;
+ }
+
+ /*Tablet Styles*/
+
+@media(max-width: 800px) {
+    h1, h2 {
+        font-size: 7rem;
+        margin: 4rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .projectGalleryRow {
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    .topImage {
+       width: auto;
+        height: 50rem;
+        margin: 3rem;
+    }
+
+    .projectGalleryRow img {
+        width: 32rem;
+        margin: 1rem;
+    }
+
+    .projectText {
+        width: auto;
+        text-align: center;
+    }
+}
+
+
+ /*Mobile Styles*/
+
+ @media(max-width: 500px) {
+
+    h1, h2 {
+        font-size: 4rem;
+        margin: 2rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+
+    button a {
+        font-size: 2rem;
+    }
+
+    .topImage {
+        height: 30rem;
+     }
+
+    .projectGalleryRow {
+        flex-wrap: wrap;
+        margin: 0 .5rem;
+    }
+
+    .projectGalleryRow img {
+        width: 18rem;
+        margin: 1rem 0;
+    }
+ }
+ 
