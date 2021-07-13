@@ -1,3 +1,5 @@
+/*Home Page Styles*/
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
@@ -23,7 +25,6 @@ body {
     flex-direction: column;
     justify-content: center; /*centers divs*/
     text-align: center; /*centers text in the div*/
-    font-size: 2rem;
 }
 
 h1 {
@@ -39,18 +40,18 @@ h1 {
     height: 50rem;
 }
 
-.galleryRow {
+.projectGalleryRow {
     display: flex;
     /*flex-direction is row by default*/
-    justify-content: space-evenly;
-    padding: 2rem;
-    font-size: 2rem;
+    justify-content: space-between;
+    padding: 2rem 0;
 }
 
-.galleryText {
-    width: 20rem;
+.projectText {
+    width: 30rem;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
+    margin-right: 2rem;
 }
 
 button {
@@ -100,7 +101,8 @@ footer {
 
 @media(max-width: 800px) {
     h1, h2 {
-        font-size: 6rem;
+        font-size: 7rem;
+        margin: 4rem;
     }
 
     nav {
@@ -109,8 +111,9 @@ footer {
         margin: auto;
     }
 
-    .galleryRow {
+    .projectGalleryRow {
         flex-wrap: wrap;
+        padding: 2rem;
     }
 
     .topImage {
@@ -119,21 +122,47 @@ footer {
         margin: 3rem;
     }
 
-    .galleryRow img {
+    .projectGalleryRow img {
         width: 32rem;
         margin: 1rem;
     }
 
-    .galleryText {
-        width: 50rem;
+    .projectText {
+        width: auto;
         text-align: center;
     }
-
 }
 
 
  /*Mobile Styles*/
 
- /* @media(max-width: 500px) {
-     */
+ @media(max-width: 500px) {
+
+    h1, h2 {
+        font-size: 4rem;
+        margin: 2rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+
+    button a {
+        font-size: 2rem;
+    }
+
+    .topImage {
+        height: 30rem;
+     }
+
+    .projectGalleryRow {
+        flex-wrap: wrap;
+        margin: 0 .5rem;
+    }
+
+    .projectGalleryRow img {
+        width: 18rem;
+        margin: 1rem 0;
+    }
+ }
  
